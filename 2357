@@ -1,0 +1,59 @@
+/*
+ * Elabore um algoritmo que descubra se o número digitado é múltiplo de 2,  3,  5 ou 7.
+ *Caso o número seja múltiplo de dois ou mais números, mostre quais números ele é múltiplo.
+ *BONUS: Monte esse algorítimo de forma que exiba a decomposição em fatores primos do numero natural digitado.
+ */
+
+programa 
+{
+	funcao inicio() 
+	{
+		inteiro numero, multiplo
+		
+		escreva("Digite um número: ")
+		leia(numero)
+
+		se (numero % 2 == 0) 
+		{
+			escreva("\nO número ", numero, " é múltiplo de 2")	
+		
+		}
+		se (numero % 3 == 0) 
+		{
+			escreva("\nO número ", numero, " é múltiplo de 3")	
+		}
+		
+	    se (numero % 5 == 0) 
+		{
+			escreva("\nO número ", numero, " é múltiplo de 5")	
+		}
+		
+		se (numero % 7 == 0) 
+		{
+			escreva("\nO número ", numero, " é múltiplo de 7")	
+		}
+		
+		    senao
+	    		escreva("\nO número ", numero, " não é múltiplo de 2, 3, 5 ou 7")
+
+		escreva("\n")
+	}
+}
+/*
+Digite um número: 490
+
+O número 490 é múltiplo de 2
+O número 490 é múltiplo de 5
+O número 490 é múltiplo de 7
+
+Programa finalizado.
+
+
+_______________________________
+
+Digite um número: 23
+
+O número 23 não é múltiplo de 2, 3, 5 ou 7
+
+Programa finalizado.
+______________________________________________*/
